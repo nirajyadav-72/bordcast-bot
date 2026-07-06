@@ -132,11 +132,11 @@ async def broadcast_command(client: Client, message: Message):
 
     # Final Summary Report
     report = (
-        "📊 **Broadcast Report:**\n\n"
-        "👤 **Private Chats:**\n"
+        "📊 Broadcast Report:\n\n"
+        "👤 Private Chats:\n"
         f"✅ Success: {success_users}\n"
         f"❌ Failed/Blocked: {failed_users}\n\n"
-        "👥 **Groups:**\n"
+        "👥 Groups:\n"
         f"✅ Success: {success_groups}\n"
         f"❌ Failed: {failed_groups}"
     )
