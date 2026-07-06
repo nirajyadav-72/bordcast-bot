@@ -78,12 +78,12 @@ async def start_command(client: Client, message: Message):
 
     if chat_type.value == "private":
         add_user(chat_id)
-        welcome_text = "👋 Hello! Welcome to the Private Chat Bot."
+        welcome_text = "👋 Hello! Welcome to the quiz Bot."
     else:
         add_group(chat_id)
         welcome_text = "👋 Hello! Thanks for adding me to this group."
 
-    await message.reply_text(f"{welcome_text}\n\n👤 **Owner ID:** `{OWNER_ID}`")
+    await message.reply_text(f"{welcome_text}")
 
 # /broadcast Command Handler
 @app.on_message(filters.command("broadcast") & filters.user(OWNER_ID))
